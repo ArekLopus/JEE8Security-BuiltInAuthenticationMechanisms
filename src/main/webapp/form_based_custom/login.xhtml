@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:jsf="http://xmlns.jcp.org/jsf">
+<h:head />
+
+<h:messages />
+
+<body>
+	<h3>Custom Form-based JSF Authentication</h3>
+
+	<form jsf:id="form">
+		Username <input jsf:id="username" type="text" jsf:value="#{loginBean.username}" />
+		<br/>
+		Password <input jsf:id="password" type="text" jsf:value="#{loginBean.password}" />
+		<br/><br/>
+		<input type="submit" value="Login" jsf:action="#{loginBean.login}" />
+		
+	</form>
+
+</body>
+
+</html>
